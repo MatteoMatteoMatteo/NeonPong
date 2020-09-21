@@ -35,7 +35,7 @@ public class Clap : MonoBehaviour {
                                 col.collider.bounds.size.y);
 
             // Calculate direction, make length=1 via .normalized
-            Vector2 dir = new Vector2(1, y).normalized;
+            Vector2 dir = new Vector2(1, 0).normalized;
 
             // Set Velocity with dir * speed
             GetComponent<Rigidbody2D>().velocity = dir * speed *Time.deltaTime;
@@ -49,7 +49,7 @@ public class Clap : MonoBehaviour {
                                 col.collider.bounds.size.y);
 
             // Calculate direction, make length=1 via .normalized
-            Vector2 dir = new Vector2(-1, y).normalized;
+            Vector2 dir = new Vector2(-1, 0).normalized;
             
             // Set Velocity with dir * speed
             GetComponent<Rigidbody2D>().velocity = dir * speed *Time.deltaTime;

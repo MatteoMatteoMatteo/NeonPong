@@ -14,6 +14,10 @@ public class manager : MonoBehaviour
     private GameObject _kickBall;
     public GameObject clap;
     private GameObject _clapBall;
+    public GameObject bass;
+    private GameObject _bassBall;
+    public GameObject chord;
+    private GameObject _chordBall;
 
     public lose player1;
     public loose player2;
@@ -77,10 +81,27 @@ public class manager : MonoBehaviour
         //Clap
         if (Input.GetKeyDown(KeyCode.A))
         {
-            _clapBall=Instantiate(clap, new Vector3(0,10,0), Quaternion.identity);
+            _clapBall=Instantiate(clap, new Vector3(56,20,0), Quaternion.identity);
         }else if (Input.GetKeyUp(KeyCode.A))
         {
             Destroy(_clapBall);
+        }
+        //bass
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            _bassBall=Instantiate(bass, new Vector3(56,-10,0), Quaternion.identity);
+        }else if (Input.GetKeyUp(KeyCode.D))
+        {
+            Destroy(_bassBall);
+        }
+        //chord
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            _chordBall=Instantiate(chord, new Vector3(56,-30,0), Quaternion.identity);
+        }
+        else if (Input.GetKeyUp(KeyCode.S))
+        {
+            Destroy(_chordBall);
         }
     }
 

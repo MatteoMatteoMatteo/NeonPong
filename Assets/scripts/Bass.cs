@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Kick : MonoBehaviour {
+public class Bass : MonoBehaviour {
     public float speed = 30;
 
     void Start() {

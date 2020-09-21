@@ -17,6 +17,8 @@ public class MoveRacket : MonoBehaviour
 
         if (col.gameObject.CompareTag("Kick")) FindObjectOfType<audioManager>().Play("Kick");
         if (col.gameObject.CompareTag("Clap")) FindObjectOfType<audioManager>().Play("Clap");
+        if (col.gameObject.CompareTag("Bass")) FindObjectOfType<audioManager>().Play("Bass");
+        if (col.gameObject.CompareTag("Chord")) FindObjectOfType<audioManager>().Play("Chord");
 
 
 

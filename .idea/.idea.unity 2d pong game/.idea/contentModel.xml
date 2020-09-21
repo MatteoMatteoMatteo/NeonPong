@@ -31,6 +31,8 @@
         <e p="manager.cs" t="Include" />
         <e p="MoveRacket.cs" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="Bass.cs" t="Include" />
+          <e p="Chord.cs" t="Include" />
           <e p="Clap.cs" t="Include" />
           <e p="Kick.cs" t="Include" />
           <e p="mainmenu.cs" t="Include" />

@@ -8,12 +8,6 @@ public class MoveRacket : MonoBehaviour
     public float speed = 30;
     public string axis = "Vertical";
 
-    void FixedUpdate()
-    {
-        float v = Input.GetAxisRaw(axis);
-        GetComponent<Rigidbody2D>().velocity = new Vector2(0, v) * speed;
-    }
-
     void OnCollisionEnter2D(Collision2D col)
     {
 
@@ -21,7 +15,9 @@ public class MoveRacket : MonoBehaviour
 
 
 
-        if (col.gameObject.tag == "Ball") FindObjectOfType<audioManager>().Play("PongSound");
+        if (col.gameObject.CompareTag("Kick")) FindObjectOfType<audioManager>().Play("Kick");
+        if (col.gameObject.CompareTag("Clap")) FindObjectOfType<audioManager>().Play("Clap");
+
 
 
     }

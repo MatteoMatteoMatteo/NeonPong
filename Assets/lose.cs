@@ -26,7 +26,6 @@ public class lose : MonoBehaviour
     {
         score++;
         pl2Text.text = "" + score + "";
-        FindObjectOfType<audioManager>().Play("WinPoint");
         // CameraShaker.Instance.ShakeOnce(1f, 1f, 0f, 1f);
 
     }

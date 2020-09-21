@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Ball : MonoBehaviour {
+public class Clap : MonoBehaviour {
     public float speed = 30;
 
     void Start() {
